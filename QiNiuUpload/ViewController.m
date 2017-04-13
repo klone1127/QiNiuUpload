@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <QiniuSDK.h>
-#import <CommonCrypto/CommonCrypto.h>
+#import "UploadManager.h"
 
 #define kToken      @"DoBVQEyHluJ27PPgPBIfp93HvfkloUSBc9aEBc9I:HilyAVJZbJUdZ6Bk97RBzlOenag=:eyJzY29wZSI6ImJsb2ciLCJkZWFkbGluZSI6MTQ5MjA3MjEwN30="
 
@@ -36,23 +35,20 @@
 - (void)uploadWithToken:(NSString *)token {
     NSString *imageName = @"Nav-busline-detail1";
 
-    QNConfiguration *config = [QNConfiguration build:^(QNConfigurationBuilder *builder) {
-        builder.zone = [QNZone zone2];
-    }];
+    NSData *data = [self imageToData:imageName];
 
-    QNUploadManager *uploadManager = [[QNUploadManager alloc] initWithConfiguration:config];
+    __weak typeof(self)weakSelf = self;
+    [[UploadManager manager] uploadWithData:data key:imageName token:token success:^(QNResponseInfo *info, NSString *key) {
+        __strong typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf showUploadSuccess:[NSString stringWithFormat:@"%@/%@", info.serverIp, key]];
+    }];
+ 
+}
+
+- (NSData *)imageToData:(NSString *)imageName {
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"/Users/jgrm/Desktop/%@.png", imageName]];
     NSData *data = [NSData dataWithData:UIImagePNGRepresentation(image)];
-
-    [uploadManager putData:data
-                       key:imageName
-                     token:token
-                  complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
-                      NSLog(@"info:%@", info);
-                      if (info.ok) {
-                          [self showUploadSuccess:[NSString stringWithFormat:@"%@/%@", info.serverIp, key]];
-                      }
-                  } option:nil];
+    return data;
 }
 
 - (void)showUploadSuccess:(NSString *)string {
