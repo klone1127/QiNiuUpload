@@ -15,6 +15,10 @@
 		8BBBA7021E9F54350061CEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBBA7001E9F54350061CEEC /* LaunchScreen.storyboard */; };
 		8BBBA70D1E9F54350061CEEC /* QiNiuUploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBBA70C1E9F54350061CEEC /* QiNiuUploadTests.m */; };
 		8BBBA7181E9F54350061CEEC /* QiNiuUploadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBBA7171E9F54350061CEEC /* QiNiuUploadUITests.m */; };
+		8BBBA7271E9F6B040061CEEC /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBBA7261E9F6B040061CEEC /* NSString+Hash.m */; };
+		8BBBA72C1E9F86830061CEEC /* NSString+QiNiu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBBA72B1E9F86830061CEEC /* NSString+QiNiu.m */; };
+		8BBBA72F1E9F86E90061CEEC /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBBA72E1E9F86E90061CEEC /* NSDate+Common.m */; };
+		8FFCB33D82B01FFFA6BF2854 /* libPods-QiNiuUpload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC27802F5CB5BE8EFE14E13 /* libPods-QiNiuUpload.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2826F561D43522EFD6880808 /* Pods-QiNiuUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiNiuUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiNiuUpload/Pods-QiNiuUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC27802F5CB5BE8EFE14E13 /* libPods-QiNiuUpload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QiNiuUpload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBBA6EF1E9F54340061CEEC /* QiNiuUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiNiuUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBBA6F31E9F54340061CEEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BBBA6F51E9F54340061CEEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		8BBBA7131E9F54350061CEEC /* QiNiuUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiNiuUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBBA7171E9F54350061CEEC /* QiNiuUploadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiNiuUploadUITests.m; sourceTree = "<group>"; };
 		8BBBA7191E9F54350061CEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBBA7251E9F6B040061CEEC /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		8BBBA7261E9F6B040061CEEC /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		8BBBA7291E9F6B260061CEEC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8BBBA72A1E9F86830061CEEC /* NSString+QiNiu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QiNiu.h"; sourceTree = "<group>"; };
+		8BBBA72B1E9F86830061CEEC /* NSString+QiNiu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QiNiu.m"; sourceTree = "<group>"; };
+		8BBBA72D1E9F86E90061CEEC /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		8BBBA72E1E9F86E90061CEEC /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		F8D4A41885289FD46EB55CD1 /* Pods-QiNiuUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiNiuUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-QiNiuUpload/Pods-QiNiuUpload.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFCB33D82B01FFFA6BF2854 /* libPods-QiNiuUpload.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811173AC421E72C42BBB4AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC27802F5CB5BE8EFE14E13 /* libPods-QiNiuUpload.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BBBA6E61E9F54340061CEEC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				8BBBA70B1E9F54350061CEEC /* QiNiuUploadTests */,
 				8BBBA7161E9F54350061CEEC /* QiNiuUploadUITests */,
 				8BBBA6F01E9F54340061CEEC /* Products */,
+				C6A2854C94E667FF7078CE3C /* Pods */,
+				811173AC421E72C42BBB4AFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +126,7 @@
 		8BBBA6F11E9F54340061CEEC /* QiNiuUpload */ = {
 			isa = PBXGroup;
 			children = (
+				8BBBA7281E9F6B080061CEEC /* Tools */,
 				8BBBA6F51E9F54340061CEEC /* AppDelegate.h */,
 				8BBBA6F61E9F54340061CEEC /* AppDelegate.m */,
 				8BBBA6F81E9F54340061CEEC /* ViewController.h */,
@@ -110,6 +136,7 @@
 				8BBBA7001E9F54350061CEEC /* LaunchScreen.storyboard */,
 				8BBBA7031E9F54350061CEEC /* Info.plist */,
 				8BBBA6F21E9F54340061CEEC /* Supporting Files */,
+				8BBBA7291E9F6B260061CEEC /* PrefixHeader.pch */,
 			);
 			path = QiNiuUpload;
 			sourceTree = "<group>";
@@ -140,6 +167,28 @@
 			path = QiNiuUploadUITests;
 			sourceTree = "<group>";
 		};
+		8BBBA7281E9F6B080061CEEC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8BBBA7251E9F6B040061CEEC /* NSString+Hash.h */,
+				8BBBA7261E9F6B040061CEEC /* NSString+Hash.m */,
+				8BBBA72A1E9F86830061CEEC /* NSString+QiNiu.h */,
+				8BBBA72B1E9F86830061CEEC /* NSString+QiNiu.m */,
+				8BBBA72D1E9F86E90061CEEC /* NSDate+Common.h */,
+				8BBBA72E1E9F86E90061CEEC /* NSDate+Common.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		C6A2854C94E667FF7078CE3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2826F561D43522EFD6880808 /* Pods-QiNiuUpload.debug.xcconfig */,
+				F8D4A41885289FD46EB55CD1 /* Pods-QiNiuUpload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BBBA71C1E9F54350061CEEC /* Build configuration list for PBXNativeTarget "QiNiuUpload" */;
 			buildPhases = (
+				39EDB352913A2E6150B87B16 /* [CP] Check Pods Manifest.lock */,
 				8BBBA6EB1E9F54340061CEEC /* Sources */,
 				8BBBA6EC1E9F54340061CEEC /* Frameworks */,
 				8BBBA6ED1E9F54340061CEEC /* Resources */,
+				0551C5E36E528A7A8B76E477 /* [CP] Embed Pods Frameworks */,
+				59227E41B666638B86FEA0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,14 +320,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0551C5E36E528A7A8B76E477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QiNiuUpload/Pods-QiNiuUpload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39EDB352913A2E6150B87B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59227E41B666638B86FEA0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QiNiuUpload/Pods-QiNiuUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BBBA6EB1E9F54340061CEEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBBA72C1E9F86830061CEEC /* NSString+QiNiu.m in Sources */,
 				8BBBA6FA1E9F54340061CEEC /* ViewController.m in Sources */,
+				8BBBA7271E9F6B040061CEEC /* NSString+Hash.m in Sources */,
 				8BBBA6F71E9F54340061CEEC /* AppDelegate.m in Sources */,
 				8BBBA6F41E9F54340061CEEC /* main.m in Sources */,
+				8BBBA72F1E9F86E90061CEEC /* NSDate+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +527,11 @@
 		};
 		8BBBA71D1E9F54350061CEEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2826F561D43522EFD6880808 /* Pods-QiNiuUpload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QiNiuUpload/PrefixHeader.pch";
 				INFOPLIST_FILE = QiNiuUpload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klone1127.QiNiuUpload;
@@ -435,8 +541,11 @@
 		};
 		8BBBA71E1E9F54350061CEEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D4A41885289FD46EB55CD1 /* Pods-QiNiuUpload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QiNiuUpload/PrefixHeader.pch";
 				INFOPLIST_FILE = QiNiuUpload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klone1127.QiNiuUpload;
@@ -509,6 +618,7 @@
 				8BBBA71E1E9F54350061CEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BBBA71F1E9F54350061CEEC /* Build configuration list for PBXNativeTarget "QiNiuUploadTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +627,7 @@
 				8BBBA7211E9F54350061CEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BBBA7221E9F54350061CEEC /* Build configuration list for PBXNativeTarget "QiNiuUploadUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +636,7 @@
 				8BBBA7241E9F54350061CEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
